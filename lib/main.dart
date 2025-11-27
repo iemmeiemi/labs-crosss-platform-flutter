@@ -1,6 +1,7 @@
 import 'package:client/Presentation/Screens/HomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
         title: 'Namer App',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
+          textTheme: GoogleFonts.robotoTextTheme(),
         ),
         home: HomeScreen(),
       ),
